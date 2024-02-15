@@ -1,0 +1,15 @@
+.word {
+  display: inline-block;
+  transition: transform 0.8s ease-in-out;
+  /* Smooth transition */
+}
+
+.word:hover {
+  transform: translate(-30px, 30px);
+  /* Diagonal movement */
+}
+
+.word:hover~p {
+  transition: transform 0.8s ease-in-out;
+  transform: translateY(30px);
+}
